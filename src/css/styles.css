@@ -1,0 +1,225 @@
+:root {
+   --bg-color: #282828;
+   --bg-color-transparente: #2828287e;
+   --bg-color-destaque: #0B0B0B;
+   --cor-fonte-principal: white;
+   --cor-fonte-secundaria: #E8E8E8;
+   --cor-playstation: #00439c;
+   --cor-xbox: #387a26;
+   --cor-pc: #fcaf17;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   background-color: var(--bg-color);
+   color: var(--cor-fonte-principal);
+   font-family: 'Chalet', sans-serif;
+}
+
+.cabecalho {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   background-color: var(--bg-color-destaque);
+   height: 80px;
+   padding: 0 80px;
+   border-bottom: 1px solid var(--bg-color-destaque);
+}
+.logos {
+   display: flex;
+   gap: 15px;
+}
+.menu {
+   display: flex;
+   gap: 28px;
+}
+.menu__link a {
+   color: var(--cor-fonte-secundaria);
+   font-size: 15px;
+   font-weight: bold;
+   padding: 30px;
+}
+.menu__link a:hover {
+   border-bottom: 1px solid var(--cor-fonte-principal);
+}
+
+
+.home {
+   background-image: url(../imagens/bg-main.png);
+   background-position: center;
+   background-size: cover;
+   min-height: calc(100vh - 80px);
+   height: 100vh;
+   position: relative;
+}
+.home::after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+}
+
+.home__container {
+   position: absolute;
+   z-index: 1;
+   height: calc(100vh - 80px);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 32px;
+   padding: 80px 80px 80px 170px;
+   max-width: 780px;
+}
+
+.home__container .logos {
+   gap: 32px;
+}
+.home .logos img {
+   max-width: 150px;
+}
+
+.titulo {
+   font-family: 'ChaletComprime';
+   font-size: 55px;
+}
+
+.home__descricao {
+   font-size: 18px;
+   line-height: 1.6;
+}
+
+.home__botao {
+   background-color: rgba(255, 255, 255, 0.1);
+   border: 1px solid var(--cor-fonte-principal);
+   border-radius: 4px;
+   font-family: 'ChaletComprime';
+   font-size: 28px;
+   text-align: center;
+   text-transform: uppercase;
+   padding: 20px 40px;
+   width: 50%;
+   transition: all .2s ease-in;
+}
+.home__botao:hover {
+   background-color: var(--cor-fonte-principal);
+   color: var(--bg-color-destaque);
+}
+
+.compre-ja {
+   text-align: center;
+   padding: 50px;
+}
+
+.compre-ja .titulo {
+   font-size: 50px;
+   margin-bottom: 50px;
+}
+
+.compre-ja__cartao {
+   background-color: var(--bg-color-destaque);
+   border-radius: 10px;
+   padding: 80px;
+   width: 50%;
+   margin: 0 auto;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px;
+}
+
+.cartao__capa-do-jogo {
+   width: 270px;
+}
+
+.cartao__informacoes {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.cartao__informacoes h3 {
+   font-family: 'ChaletComprime', sans-serif;
+   font-size: 52px;
+}
+
+.cartao__informacoes p {
+   color: var(--cor-fonte-secundaria);
+   line-height: 1.6;
+}
+
+.cartao__informacoes ul {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 32px;
+   justify-content: center;
+}
+
+.btn-plataforma {
+   background-color: var(--bg-color-transparente);
+   border: 1px solid var(--cor-fonte-principal);
+   border-radius: 4px;
+   color: var(--cor-fonte-principal);
+   cursor: pointer;
+   font-family: 'ChaletComprime', sans-serif;
+   font-size: 28px;
+   text-transform: uppercase;
+   padding: 20px 40px;
+   width: 100%;
+}
+
+.btn-plataforma .plataformas {
+   display: none;
+}
+
+.btn-plataforma .plataformas.ativo {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-top: 10px;
+}
+
+.btn-plataforma li {
+   border: 1px solid white;
+   padding: 20px;
+}
+
+.btn-plataforma li:nth-child(1) {
+   border-color: var(--cor-playstation);
+}
+.btn-plataforma li:nth-child(1):hover {
+   background-color: var(--cor-playstation);
+}
+
+.btn-plataforma li:nth-child(2) {
+   border-color: var(--cor-xbox);
+}
+.btn-plataforma li:nth-child(2):hover {
+   background-color: var(--cor-xbox);
+}
+
+.btn-plataforma li:nth-child(3) {
+   border-color: var(--cor-playstation);
+}
+.btn-plataforma li:nth-child(3):hover {
+   background-color: var(--cor-playstation);
+}
+
+.btn-plataforma li:nth-child(4) {
+   border-color: var(--cor-xbox);
+}
+.btn-plataforma li:nth-child(4):hover {
+   background-color: var(--cor-xbox);
+}
+
+.btn-plataforma li:nth-child(5) {
+   border-color: var(--cor-pc);
+}
+.btn-plataforma li:nth-child(5):hover {
+   background-color: var(--cor-pc);
+}
