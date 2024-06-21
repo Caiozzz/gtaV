@@ -1,0 +1,92 @@
+@media screen and (max-width: 1024px) {
+   .cabecalho {
+      flex-wrap: wrap;
+   }
+   .cabecalho__logos {
+      padding: 0 24px;
+   }
+   .menu__link a {
+      padding: 20px;
+   }
+
+   .home__container {
+      /* height: auto; */
+      padding: 70px 60px 70px 10%;
+   }
+   .home__logos img {
+      max-width: 120px;
+   }
+
+   .compre-ja__cartao {
+      width: 70%;
+   }
+}
+
+@media screen and (max-width: 852px) {
+   .cabecalho {
+      padding-top: 1em;
+      justify-content: center;
+   }
+
+   .home__container {
+      padding: 60px 60px 60px 10%;
+   }
+
+   .home__logos img {
+      max-width: 100px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .home {
+      height: auto;
+   }
+
+   .titulo {
+      font-size: 2.5rem;
+   }
+
+   .compre-ja__cartao {
+      width: auto;
+      padding-inline: 60px;
+   }
+
+   .cartao__informacoes h3 {
+      font-size: 40px;
+   }
+}
+
+@media screen and (max-width: 568px) {
+   .cabecalho {
+      padding-inline: 20px;
+   }
+
+   .menu__link a {
+      padding: 15px;
+   }
+
+   .home__container {
+      padding: 40px;
+   }
+
+   .home__botao {
+      width: 100%;
+   }
+
+   .compre-ja {
+      padding: 20px;
+   }
+
+   .compre-ja .titulo {
+      font-size: 42px;
+      letter-spacing: 0.1rem;
+   }
+
+   .compre-ja__cartao {
+      padding-inline: 30px;
+   }
+
+   .cartao__capa-do-jogo {
+      width: 200px;
+   }
+}
