@@ -25,9 +25,7 @@ body {
    align-items: center;
 
    background-color: var(--bg-color-destaque);
-   height: 80px;
    padding: 0 80px;
-   border-bottom: 1px solid var(--bg-color-destaque);
 }
 .logos {
    display: flex;
@@ -38,10 +36,12 @@ body {
    gap: 28px;
 }
 .menu__link a {
+   display: inline-block;
    color: var(--cor-fonte-secundaria);
    font-size: 15px;
    font-weight: bold;
    padding: 30px;
+   border-bottom: 1px solid var(--bg-color-destaque);
 }
 .menu__link a:hover {
    border-bottom: 1px solid var(--cor-fonte-principal);
