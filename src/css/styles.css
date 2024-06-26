@@ -27,7 +27,7 @@ body {
    background-color: var(--bg-color-destaque);
    padding: 0 80px;
 }
-.logos {
+.cabecalho__logos {
    display: flex;
    gap: 15px;
 }
@@ -76,10 +76,11 @@ body {
    max-width: 780px;
 }
 
-.home__container .logos {
+.home__logos {
+   display: flex;
    gap: 32px;
 }
-.home .logos img {
+.home__logos img {
    max-width: 150px;
 }
 
